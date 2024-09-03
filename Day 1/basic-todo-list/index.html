@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- html - HTML 5th Version -->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo List Application</title>
+
+      
+        <!-- Internal CSS -->
+        <style>
+
+            /* Univeral Selector */
+            * {
+                margin: 0;
+                box-sizing: border-box; 
+                /* Reset */
+            }
+
+            body {
+                font-size: 16px;
+            }
+
+            .todo-application {
+                border: 1px solid #cccccc;
+                max-width: 300px;
+                margin: 20px auto 0 auto;
+                padding: 10px 20px;
+                border-radius: 10px;
+                height: calc(100vh - 40px);
+            }
+
+            h1 {
+                font-size: 20px;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            .todo-content {
+                background: #f5f5ff;
+                margin-bottom: 15px;
+                padding: 10px;
+                height: calc(100vh - 134px);
+                overflow: auto;
+            }
+
+            .todo-form {
+                margin-bottom: 15px;
+                border: 1px solid #eee;
+                padding: 10px;
+                background-color: #fff;
+            }
+
+
+            input[type="text"] {
+                border: none;
+                padding: 5px;
+                font-size: 16px;
+                width: 100%;
+                outline: 1px solid rgb(210, 210, 251);
+                /* outline: none; */
+            }
+
+            .input-field {
+                margin-bottom: 15px;
+            }
+
+            button {
+                padding: 8px 15px;
+                font-size: 12px;
+                background: rgb(106, 106, 242);
+                color: #fff;
+                border: 1px solid rgb(87, 87, 243);
+            }
+
+            .list-items {
+                padding: 0;
+                list-style: none;
+            }
+
+            .list-items li {
+                /* margin-bottom: 15px; */
+                border-bottom: 1px dashed #ccc;
+                padding: 15px 0 15px 10px; 
+                /* Top Right Bottom Left */
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="todo-application">
+            <!-- Todo Header -->
+             <div class="todo-header">
+                <h1>Todo List Application</h1>
+             </div>
+
+             <div class="todo-content">
+                <form class="todo-form">
+                    <input class="input-field" type="text" value="" placeholder="Enter your task." />
+                    <button>Submit</button>
+                </form>
+                <div class="todo-listing">
+
+                    <ul class="list-items">
+                        <li class="list-item">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </li>
+
+                        <li class="list-item">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </li>
+                        <li class="list-item">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </li>
+                        <li class="list-item">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </li>
+                    </ul>
+               </div>
+             </div>
+             
+             <div class="todo-footer">
+                &copy; Copyright 2024. All rights reserved.
+             </div>
+        </div>
+    </body>
+</html>
