@@ -13,7 +13,6 @@
             height: 300px;
             width: 300px;
             border: 1px solid #ccc;
-            position: relative;
             bottom: 0;
             right: 0;
             top: 50px;
@@ -27,21 +26,14 @@
         }
 
         .third-item  {
-            position: absolute;
-            bottom: 0;
-            right: 0;
         }
 
         .second-item {
-            position: fixed;
-            right: 0;
-            top: 0;
+         
         }
 
         div.r-item {
-            position: absolute;
-            top: -24px;
-            right: -1px;
+   
             height: auto;
             width: auto;
             background: rgb(204, 204, 255);
@@ -49,7 +41,6 @@
             padding: 5px 10px;
             border: unset;
         }
-        
      </style>
     </head>
     <body>
@@ -57,7 +48,7 @@
       About
 
       Relative
-      <div class="relative-element">
+      <div class="float-element">
         <div>Item 1</div>
         <div class="second-item">Item 2</div>
         <div class="third-item">Item 3 absolute</div>
