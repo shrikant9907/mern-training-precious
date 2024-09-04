@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- html - HTML 5th Version -->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+
+      
+        <!-- Internal CSS -->
+        <style>
+
+            /* Univeral Selector */
+            * {
+                margin: 0;
+                box-sizing: border-box; 
+                /* Reset */
+            }
+    
+            body {
+                font-size: 16px;
+                background: #efefef;
+            }
+
+            .app-header {
+                background: #fff;
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                height: 60px;
+                /* overflow: hidden; */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+
+            .sub-menu-items, 
+            .menu-items {
+                display: flex;
+                list-style: none;
+                padding: 0;
+                background: #fff;
+            }
+
+            .sub-menu-items li a,
+            .menu-items li a {
+                color: #000000;
+                text-decoration: none;
+                padding: 5px 15px;
+                display: inline-block;
+            }
+
+            .sub-menu-items li a:hover,
+            .menu-items li a:hover {
+                color: red;
+            }
+
+            .sub-menu-items {
+                flex-direction: column;
+                padding: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                display: none;
+            }
+
+            .menu-items li {
+                position: relative;
+            }
+
+            .menu-items li:hover ul {
+                display: flex;
+                position: absolute;
+                top: 28px;
+                left: 0;
+            }
+
+            .ovarlay {
+                background: rgba(255,255,255, 0.9);
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+ 
+            .brand-name {
+                padding-left: 15px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+            <!-- App Header -->
+             <header class="app-header">
+                <span class="brand-name">Company Name</span>
+                <nav>
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about.html">About</a>
+                            <ul class="sub-menu-items">
+                                <li class="menu-item">
+                                    <a href="#">Company</a>
+                                </li>
+                                <li>
+                                    <a href="#">Director</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+             </header>
+
+             <!-- Content Area -->
+           
+             <!-- App Footer -->
+             <footer class="todo-footer">
+                <!-- &copy; Copyright 2024. All rights reserved. -->
+             </footer>
+       
+    </body>
+</html>
