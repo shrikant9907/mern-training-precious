@@ -6,9 +6,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
-
-      
-        <!-- Internal CSS -->
         <style>
 
             /* Univeral Selector */
@@ -21,6 +18,13 @@
             body {
                 font-size: 16px;
                 background: #efefef;
+                padding-top: 60px;
+            }
+
+            .container {
+                padding: 0 15px;
+                max-width: 1140px;
+                margin: 0 auto;
             }
 
             .app-header {
@@ -29,12 +33,15 @@
                 top: 0;
                 right: 0;
                 left: 0;
-                height: 60px;
                 /* overflow: hidden; */
+            }
+
+            .app-header .container {
+                height: 60px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-            }
+           }
 
 
             .sub-menu-items, 
@@ -90,44 +97,143 @@
                 padding-left: 15px;
             }
 
+            /* Main Area Style */
+            .main-content {
+                height: 500px;
+            }
+
+            /* Footer Style Start */
+            .app-footer {
+                background:  #fff;
+                padding-top: 50px;
+            }
+
+            .footer-top-part {
+                display: flex;
+                gap: 20px;
+                padding-bottom: 20px;
+            }
+
+            .footer-col {
+                width: 20%;
+            }
+
+            .footer-col1 {
+                width: 30%;
+            }
+
+            .footer-top-part h4 {
+                margin-bottom: 15px;
+                font-size: 20px;
+            }
+
+            .footer-bottom-part {
+                /* text-align: center; */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 0;
+                border-top: 1px solid #ccc;
+            }
+
+            .footer-links a {
+                display: block;
+                text-decoration: none;
+                margin-bottom: 15px;
+                color: #333;
+            }
+
+            .footer-links a:hover {
+                color: red;
+                padding-left: 15px;
+                -webkit-transition: all 500ms ease-in-out;
+                -moz-transition: all 500ms ease-in-out;
+                -ms-transition: all 500ms ease-in-out;
+                -o-transition: all 500ms ease-in-out;
+                transition: all 500ms ease-in-out;
+            }
+
         </style>
     </head>
     <body>
 
             <!-- App Header -->
              <header class="app-header">
-                <span class="brand-name">Company Name</span>
-                <nav>
-                    <ul class="menu-items">
-                        <li class="menu-item">
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                            <ul class="sub-menu-items">
-                                <li class="menu-item">
-                                    <a href="#">Company</a>
-                                </li>
-                                <li>
-                                    <a href="#">Director</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="container">
+                    <span class="brand-name">Company Name</span>
+                    <nav>
+                        <ul class="menu-items">
+                            <li class="menu-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                                <ul class="sub-menu-items">
+                                    <li class="menu-item">
+                                        <a href="#">Company</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Director</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
              </header>
 
              <!-- Content Area -->
+              <main class="main-content">
+                <div class="container">
+                    <h1>This is the main heading</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero provident aliquam fuga ducimus in perferendis consectetur adipisci ratione ipsa? Aperiam quisquam a voluptatem! Aliquam labore nulla consequuntur ipsum quidem.</p>
+                </div>
+            </main>
            
              <!-- App Footer -->
-             <footer class="todo-footer">
-                <!-- &copy; Copyright 2024. All rights reserved. -->
+             <footer class="app-footer">
+                <div class="container">
+                    <div class="footer-top-part">
+                        <div class="footer-col footer-col1">
+                            <h4>Company Name</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                        </div>
+                        <div class="footer-col footer-col2">
+                            <h4>Company Name</h4>
+                            <div class="footer-links">
+                                <a href="#">Industries we serve</a>
+                                <a href="#">Industries we serve</a>
+                                <a href="#">Industries we serve</a>
+                            </div>
+                        </div>
+                        <div class="footer-col footer-col3">
+                            <h4>Company Name</h4>
+                            <div class="footer-links">
+                                <a href="#">Industries we serve</a>
+                                <a href="#">Industries we serve</a>
+                                <a href="#">Industries we serve</a>
+                            </div>
+                        </div>
+                        <div class="footer-col footer-col4">
+                            <h4>Company Name</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                        </div>
+                    </div>
+                    <div class="footer-bottom-part">
+                        <div class="footer-b-col1">
+                            &copy; Copyright 2024. All rights reserved.
+                        </div>
+                        <div class="footer-b-col2">
+                            Created By: <a href="#">XYZ Company</a>
+                        </div>
+                    </div>
+                </div>
              </footer>
        
     </body>
