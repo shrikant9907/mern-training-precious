@@ -1,12 +1,9 @@
 # 3-Month MERN Full Stack Developer Training
-
-Welcome to the 3-Month MERN Full Stack Developer Training program! This training is meticulously crafted to transform you into a proficient MERN stack developer. Over the next 12 weeks, you'll explore MongoDB, Express.js, React.js, and Node.js in detail, and gain hands-on experience building scalable web applications.
+Welcome to the 3-Month MERN Full Stack Developer Training program!  
 
 ## Course Overview
-
-- **Duration:** 3 Months (12 Weeks)
-- **Mode of Training:** Online (Live Sessions and Recorded Videos) or Offline (Classroom-Based)
-- **Prerequisites:** Basic knowledge of JavaScript, HTML, CSS, and fundamental programming concepts
+- **Duration:** 3 Months (12 Weeks) - 1 Hour Lecture Mon to Fri.
+- **Mode of Training:** Online - Live Sessions
 
 ## Installation and Setup
 - Install Google Chrome
@@ -24,7 +21,7 @@ root/
     │   ├── reset.css
     │   └── normalize.css
     ├── js
-    │   └── script.js
+    │   └── scripts.js
     ├── assets
     │   ├── images
     │   ├── icons
