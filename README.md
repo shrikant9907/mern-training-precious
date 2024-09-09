@@ -41,7 +41,9 @@ root/
  ## Demos:
 [x] [Day 1 - Todo List](https://shrikant9907.github.io/mern-training-precious/day-1/basic-todo-list/)
 [x] [Day 2 - Header](https://shrikant9907.github.io/mern-training-precious/day-2/header/)
-[] [Day 3 - Footer](https://shrikant9907.github.io/mern-training-precious/day-3/footer/)
+[x] [Day 3 - Footer](https://shrikant9907.github.io/mern-training-precious/day-3/footer/)
+[x] [Day 4 - Footer](https://shrikant9907.github.io/mern-training-precious/day-4/footer/)
+[x] [Day 5 - Footer](https://shrikant9907.github.io/mern-training-precious/day-5/portfolio/)
 
 ## Getting Started
 
