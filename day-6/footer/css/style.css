@@ -1,0 +1,194 @@
+
+/* Common CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background: #efefef;
+    padding-top: 60px;
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.ovarlay {
+    background: rgba(255,255,255, 0.9);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+input,
+textarea {
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+    outline: 1px solid rgb(210, 210, 251);
+    /* outline: none; */
+}
+
+button,
+.btn {
+    padding: 6px 15px;
+    font-size: 14px;
+    display: inline-block;
+    width: auto;
+}
+
+.btn-primary {
+    background: rgb(80, 80, 244);
+    color: #fff; 
+}
+
+/* Header CSS */
+.app-header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    /* overflow: hidden; */
+}
+
+.app-header .container {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-menu-items, 
+.menu-items {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    background: #fff;
+}
+
+.sub-menu-items li a,
+.menu-items li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+.sub-menu-items li a:hover,
+.menu-items li a:hover {
+    color: red;
+}
+
+.sub-menu-items {
+    flex-direction: column;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: none;
+}
+
+.menu-items li {
+    position: relative;
+}
+
+.menu-items li:hover ul {
+    display: flex;
+    position: absolute;
+    top: 28px;
+    left: 0;
+}
+
+.brand-name {
+    padding-left: 15px;
+}
+
+/* Main Area CSS */
+.main-content {
+    height: 500px;
+    padding-top: 30px;
+}
+
+/* Form CSS */
+.contact-form {
+    padding: 30px;
+    background: #fff;
+    margin: 0 auto;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.contact-form label {
+    margin-bottom: 3px;
+    display: inline-block;
+}
+
+.contact-form h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+
+/* Footer CSS */
+.app-footer {
+    background:  #fff;
+    padding-top: 50px;
+}
+
+.footer-top-part {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-col {
+    width: 20%;
+}
+
+.footer-col1 {
+    width: 30%;
+}
+
+.footer-top-part h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer-bottom-part {
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+}
+
+.footer-links a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.footer-links a:hover {
+    color: red;
+    padding-left: 15px;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
