@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- html - HTML 5th Version -->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Basics</title>
+    </head>
+    <body>
+         
+        <!-- <h1 id="main-heading-id">This is default heading</h1> -->
+       <div>
+        <!-- <p id="main-para-id">This is default paragraph.</p>   -->
+
+        <input id="number1" type="number" min="0" max="100" autocomplete="off" value="10" placeholder="Enter number 1" />
+        <input id="number2" type="number" min="0" max="100" autocomplete="off" value="30" placeholder="Enter number 1" />
+        <p id="result"></p>
+       </div>
+         
+
+        <script>
+            // window.document.title
+            document.title = "JavaScript Day 2 | Basics";
+
+            // console.log('Test 1', document.getElementById('mytestbody'))
+            // document.getElementById('main-heading-id').innerHTML = "<h3>This anothor body text</h3>";
+            // document.getElementById('main-para-id').innerText = "This anothor body text.";
+
+            // We are going to total two numbers.
+            // Numebr 1
+            // Number 2
+
+            var num1 = document.getElementById('number1').value;
+            var num2 = document.getElementById('number2').value;
+             
+            document.getElementById('result').innerText = parseInt(num1) + parseInt(num2);
+
+            // Event
+            // String / Array
+        </script>
+    </body>
+</html>
