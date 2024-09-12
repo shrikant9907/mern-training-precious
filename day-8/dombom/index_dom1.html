@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Basics</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body style="margin: 0; padding: 0">
+    <form style="padding: 15px">
+      <input
+        style="width: 100%; margin-bottom: 10px"
+        id="number1"
+        type="number"
+        min="0"
+        max="100"
+        autocomplete="off"
+        value="10"
+        placeholder="Enter number 1"
+      />
+      <input
+        style="width: 100%; margin-bottom: 10px"
+        id="number2"
+        type="number"
+        min="0"
+        max="100"
+        autocomplete="off"
+        value="30"
+        placeholder="Enter number 1"
+      />
+      <button onclick="showResult()" type="button" style="width: 100%">Submit</button>
+    </form>
+    <div style="padding: 15px">
+      <h4>Result</h4>
+      <div id="final_result">0</div>
+    </div>
+
+    <script>
+      function showResult() {
+        var num1 = document.getElementById("number1").value;
+        var num2 = document.getElementById("number2").value;
+        var sum = parseInt(num1) + parseInt(num2);
+        document.getElementById("final_result").innerText = sum;
+      }
+
+      // We are placing a HTML inside the final_result div element
+      // document.getElementById("final_result").innerHTML = '<p style="color:">My name is Shrikant</p>';
+    </script>
+  </body>
+</html>

@@ -9,47 +9,60 @@
       * {
         box-sizing: border-box;
       }
+
+      .dark-mode {
+        background: #1a1919;
+        color: #fff;
+      }
+
+      .theme-switcher {
+        background-color: #1a1919;
+        color: #fff;
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 40px;
+        display: inline-flex;
+        gap: 5px;
+        cursor: pointer;
+      }
+
+      /* Hide */
+      .light-mode-button {
+        display: none;
+      }
+
+      .dark-mode .dark-mode-button {
+        display: none;
+      }
+
+      .dark-mode .light-mode-button  {
+        /* Show */
+        display: block;  
+      }
+
+      .dark-mode .theme-switcher {
+        color: #333;
+        background: #efefef;
+      }
     </style>
   </head>
-  <body style="margin: 0; padding: 0">
-    <form style="padding: 15px">
-      <input
-        style="width: 100%; margin-bottom: 10px"
-        id="number1"
-        type="number"
-        min="0"
-        max="100"
-        autocomplete="off"
-        value="10"
-        placeholder="Enter number 1"
-      />
-      <input
-        style="width: 100%; margin-bottom: 10px"
-        id="number2"
-        type="number"
-        min="0"
-        max="100"
-        autocomplete="off"
-        value="30"
-        placeholder="Enter number 1"
-      />
-      <button onclick="showResult()" type="button" style="width: 100%">Submit</button>
-    </form>
-    <div style="padding: 15px">
-      <h4>Result</h4>
-      <div id="final_result">0</div>
+  <body class="body-class1 body-class2 body-class3">
+    <div class="theme-switcher" onclick="themeSwitcher()">
+      <span class="dark-mode-button">Dark Mode</span>
+      <span id="light-mode-btn" class="light-mode-button">Light Mode</span>
     </div>
 
     <script>
-      function showResult() {
-        var num1 = document.getElementById("number1").value;
-        var num2 = document.getElementById("number2").value;
-        var sum = parseInt(num1) + parseInt(num2);
-        document.getElementById("final_result").innerText = sum;
-      }
+        function themeSwitcher() {
+          console.log(document.getElementById('light-mode-btn').classList);
+          // document.body.classList.toggle('dark-mode')
+        }
 
-      // We are placing a HTML inside the final_result div element
-      // document.getElementById("final_result").innerHTML = '<p style="color:">My name is Shrikant</p>';
+        // DOM Manupulation (Document Object Modal)
+        // Refresh (dark mode ) | Jana nhi chaiye
+        // Storage / Broswer | BOM (Broswer Object Modal)
+        // - window.
+        // - LocalStorage
     </script>
   </body>
 </html>
