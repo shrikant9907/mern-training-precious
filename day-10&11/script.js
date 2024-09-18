@@ -89,14 +89,22 @@ function showListItems() {
   // Delete
   // Reset
 
-  // [{
-  //   id: 1,
-  //   task: "This is my first task",
-  //   description: "Description",
-  //   status: 'todo', // 'completed'
-  //   timestamp: '',
-  //   endDateTime: '',
-  // }]
+  [{
+    id: 1,
+    task: "This is my first task",
+    description: "Description",
+    status: 'todo', // 'completed'
+    timestamp: '',
+    endDateTime: '',
+  },
+  {
+    id: 1,
+    task: "This is my first task",
+    description: "Description",
+    status: 'todo', // 'completed'
+    timestamp: '',
+    endDateTime: '',
+  }]
 
   //filter, find, findIndex, sort
 

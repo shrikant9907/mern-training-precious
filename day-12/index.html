@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 12: Session Storage | Use of Object | Array Object Methods</title>
+    <style>
+      /* Write CSS here */
+    </style>
+  </head>
+  <body>
+    <div>
+
+      <button onclick="addTwoNumber()"></button>
+      <span onclick=""></span>
+      <div onclick=""></div>
+
+    </div>
+    <script>
+      // Write JavaScript Here
+ 
+
+    const person = {
+      firstName: 'John',
+      lastName: 'Doe',
+      age: 30,
+      fullName: function() {
+        return this.firstName + ' ' + this.lastName;
+      },
+      greet: function() {
+        return 'Hello, ' + this.firstName + ' ' + this.lastName;
+      }
+    };
+
+      ///
+    // const userFullName = (person) => {
+    //   return person.firstName + ' ' + person.lastName;
+    // }
+
+    // console.log(person.firstName); // Output: John
+    // console.log(person['firstName'] + ' ' + person['age']); // Output: John
+    // console.log(person.greet());   // Output: Hello, John Doe
+
+    // const { fullName } = person; // Destructing
+
+        // console.log(person.fullName()); 
+     // console.log('name', fullName()) 
+
+    //  const personKeyArray = Object.keys(person);
+    //  console.log('personKeyArray', personKeyArray)
+
+     
+    //  const personKeyValues = Object.values(person);
+    //  console.log('personKeyValues', personKeyValues)
+
+    //  const personKeyEntries = Object.entries(person);
+    //  console.log('personKeyEntries', personKeyEntries)
+    
+
+    person.job = "Developer"
+
+    console.log('printObject', person)
+
+    // New Assignment
+    
+  // [{
+  //   id: 1,
+  //   task: "This is my first task",
+  //   description: "Description",
+  //   status: 'todo', // 'completed'
+  //   timestamp: '',
+  //   endDateTime: '',
+  // },
+  // {
+  //   id: 1,
+  //   task: "This is my first task",
+  //   description: "Description",
+  //   status: 'todo', // 'completed'
+  //   timestamp: '',
+  //   endDateTime: '',
+  // }]
+
+    </script>
+  </body>
+</html>
