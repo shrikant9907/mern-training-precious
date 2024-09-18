@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List..</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+     
+    <div id="main-div">
+        This task will get replaced by the JavaScript
+  
+       <!-- // New item -->
+    </div>
+<script>
+    const mainDiv = document.getElementById('main-div');
+
+    // Created a Element
+    const p = document.createElement("p");
+
+    // Added text to the element
+    p.innerText = "This a new child"
+
+    // Added the element to the main div
+    mainDiv.append(p);
+    // mainDiv.appendChild(p)   
+</script>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
