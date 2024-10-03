@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 12: Session Storage | Use of Object | Array Object Methods</title>
+    <style>
+      /* Write CSS here */
+    </style>
+  </head>
+  <body>
+  <!-- Reusable -->
+ 
+    <script src="utils.js"></script>
+    <script>
+        // Start
+        var a = undefined;
+        function test() {
+
+        }
+
+        // TDN: temperal  Dead zone
+
+        console.log(a);
+        console.log(b);
+
+        var a = 10;
+
+        let b = 10;
+
+        a  = 'string';
+        const c = 40;
+        b = 30 // Correct
+        c = 20 // In Correct
+ 
+        function test() {
+        
+
+          if (true) {
+            var a = 10;
+            let b = 10;
+            const c = 10;
+          } else {
+
+          }
+        }
+
+        var name = 'Shrikant'
+        var age = '30'
+        var nameStr = `My name is ${name}. Age is ${age}`;
+        
+        var nameStr = 'My name is ' + name + '. Age is ' + age +' ';
+    </script>
+  </body>
+</html>
