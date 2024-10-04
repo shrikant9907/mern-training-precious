@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Day 12: Session Storage | Use of Object | Array Object Methods
+    </title>
+    <style>
+      /* Write CSS here */
+    </style>
+  </head>
+  <body>
+    <!-- Reusable -->
+
+    <script src="utils.js"></script>
+    <script>
+      function validateNumber(num) {
+        if (num < 0) {
+          throw new Error("Number must be non-negative");
+        }
+        return num;
+      }
+
+      try {
+        // Step 1
+
+        // Sideeffect // Third party / Rest API 
+        let value = validateNumber(-9);
+
+        // Step 2
+
+        console.log(value);
+      } catch (error) {
+        console.error("Caught an error:", error.message);
+      }
+    </script>
+  </body>
+</html>
