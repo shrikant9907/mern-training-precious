@@ -10,21 +10,113 @@
   </head>
   <body>
     <script>
-      // GET
-  
+      // Define an async function
+      // async function fetchData() {
+      //   try {
+      //     const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+      //     const data = await response.json();
+      //     console.log(response, data);
+      //   } catch (error) {
+      //     console.error('Error fetching data:', error);
+      //   }
+      // }
 
-      fetch("https://jsonplaceholder.typicode.com/posts", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(jsonData),
-      })
+      //     myPromise
+      // .then(result => {
+      //   console.log(result); // Output: 'Operation successful!'
+      //   return 'Next operation';
+      // })
+      // .then(nextResult => {
+      //   console.log(nextResult); // Output: 'Next operation'
+      // })
+      // .catch(error => {
+      //   console.error(error); // Handle any error in the chain
+      // });
+
+      // function fetchData() {
+      //   fetch("https://jsonplaceholder.typicode.com/todos/1")
+      //     .then((res) => {
+      //       console.log("res 1", res);
+      //       throw new Error('This is my custom error')
+      //       return res.json();
+      //     })
+      //     .then((data) => {
+      //       console.log("res 2", data); // Skip
+      //       // Logic
+      //       const todoStr = JSON.stringify(data);
+      //       sessionStorage.setItem('todo', todoStr)
+      //     })
+      //     .catch((error) => {
+      //       console.error(error);
+      //       alert('Unable to fetch data')
+      //     });
+      // }
+
+      // // Second Functions
+      // function myCustomAlert(name, additionalData) {
+      //   alert(`My name is ${name} and I'm a Developer.`)
+      //   console.log('additionalData', additionalData)
+      // }
+
+      // // First Function
+      // function fetchData(name, callback) {
+      //   // Simulate fetching data
+      //   console.log('Now you are fetching the user data');
+
+      //   // API response
+
+      //   // Fake Promise 1 second
+      //   setTimeout(() => {
+      //     const data = { age: 30, address: "indore" };
+      //     callback(name, data);
+      //   }, 1000);
+      // }
+
+      // fetchData('Shrikant', myCustomAlert);
+
+      // const  userAlert = (name, additionalData) => {
+      //   alert(`My name is ${name} and I'm a Developer.`)
+      //   console.log('additionalData', additionalData)
+      // }
+
+      // const fetchUserData = (name, callback) => {
+      //   setTimeout(() => {
+      //     const data = { age: 30, address: "indore" };
+      //     callback(name, data);
+      //   }, 1000);
+      // }
+
+      // fetchUserData('Ravi', userAlert)
+
+      // function greet(name, mycallback) {
+      //   mycallback(name);
+      // }
+
+      // greet("Megha", (name) => {
+      //   console.log("Hello " + name);
+      // });
+
+      // function asyncGreet(name, callback) {
+      //   setTimeout(() => {
+      //     console.log("Hello " + name);
+      //     callback();
+      //   }, 2000);
+      // }
+
+      // asyncGreet("Bob", () => {
+      //   console.log("Async Greeting finished.");
+      // });
 
 
-        // .then((response) => response.json())
-        // .then((data) => console.log(data))
-        // .catch((error) => console.error("Error:", error));
+      // Callback Hell
+
+      // First API 
+      // Second API
+      // Third API
+      // Four API
+
+      // 
+      // Fifth API
     </script>
   </body>
 </html>

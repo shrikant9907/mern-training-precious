@@ -122,6 +122,8 @@ function containsOnlyDigits(str) {
 ### 14. Function to find common elements between two arrays:
 
 ```js
+const arr1 = [1, 4]
+const arr2 = [1, 2 ,3 ,4]
 function getCommonElements(arr1, arr2) {
   return arr1.filter(element => arr2.includes(element));
 }
@@ -204,8 +206,11 @@ function checkLeapYear(year) {
 
 ### 24. Write a function to find the second largest number in an array.
 ```js
+// [1, 2 ,3 ,4 ,5, 5, 5]
 function findSecondLargest(array) {
-  const sortedArray = array.sort((a, b) => b - a);
+  // Remove the duplicated values from the array.
+const sortedArray = array.sort((a, b) => b - a); // DESC
+
   return sortedArray[1];
 }
 ```

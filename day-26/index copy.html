@@ -33,29 +33,27 @@
       //   console.error(error); // Handle any error in the chain
       // });
 
-      function fetchData() {
-        fetch("https://jsonplaceholder.typicode.com/todos/1")
-          .then((res) => {
-            console.log("res 1", res);
-            throw new Error('This is my custom error')
-            return res.json();
-          })
-          .then((data) => {
-            console.log("res 2", data); // Skip
-            // Logic 
-            const todoStr = JSON.stringify(data);
-            sessionStorage.setItem('todo', todoStr)
-          })
-          .catch((error) => {
-            console.error(error);  
-            alert('Unable to fetch data')
-          });
+      // function fetchData() {
+      //   fetch("https://jsonplaceholder.typicode.com/todos/1")
+      //     .then((res) => {
+      //       console.log("res 1", res);
+      //       throw new Error('This is my custom error')
+      //       return res.json();
+      //     })
+      //     .then((data) => {
+      //       console.log("res 2", data); // Skip
+      //       // Logic 
+      //       const todoStr = JSON.stringify(data);
+      //       sessionStorage.setItem('todo', todoStr)
+      //     })
+      //     .catch((error) => {
+      //       console.error(error);  
+      //       alert('Unable to fetch data')
+      //     });
+      // }
 
-        // const response = fetch('https://jsonplaceholder.typicode.com/todos/1');
-        // const data = response && response.json();
-        // console.log(response);
-      }
 
+      
       fetchData();
     </script>
   </body>
