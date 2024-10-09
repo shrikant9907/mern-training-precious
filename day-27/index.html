@@ -10,7 +10,75 @@
   </head>
   <body>
     <script>
-  
+      
+      // const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+
+      // const limit = numbers.length;
+      // let total = 0;
+      // for(let i = 0; i < limit; i++) {
+      //   total = total + numbers[i];
+      // }
+      // console.log('final total', total)
+
+
+      // Inline Short (Optimized)
+      // const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0); 
+      // console.log('final sum', sum)
+
+
+      //  Example 3:
+      
+      // const numbers = [1, 2, 3, 4, 5];
+      // const results = numbers.reduce((accumulator, currentValue, index, array) => {
+      //   if (index === 0) {
+      //     accumulator.push(currentValue); // First Time
+      //   } else {
+      //     const updatedAccVal = accumulator[index - 1] + currentValue;
+      //     console.log('check accumulator', accumulator)
+      //     console.log('check accumulator with index', accumulator[index - 1])
+      //     console.log('check currentValue', currentValue)
+      //     console.log('check updatedValue', updatedAccVal)
+      //     console.log('___________________________________')
+    
+      //     accumulator.push(updatedAccVal); // Adding updated value to the accumulator
+      //   }
+      //   return accumulator; // Updated Accumulator Value
+      // }, []); 
+
+      // console.log('Final result', results)
+
+
+
+    // Example 4: Based on Array and Reduce
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      const results = numbers.reduce((newArray, value, index, array) => {
+        if (index === 0) {
+          newArray = [...newArray, value];
+        } else {
+          const previousIndex = index - 1;
+          const previousValue = newArray[previousIndex];
+          const updatedValue =  previousValue + value;
+          newArray = [...newArray, updatedValue];
+        }
+        return newArray; // Updated Array Value
+      }, []); // Empty Array
+      console.log('Final result', results)
+
+    // Example 5: Based on Object and Reduce (Assignment)
+    // const numbers = // ARRAY OF OBJECTS;
+    //   const userDetails = numbers.reduce((updatedObj, value, index, array) => {
+    //     // Odd 
+    //     age = + 3
+    //     // Even
+    //     age = + 5
+    //     return updatedObj; // Updated Array Value
+    //   }, []); // Empty Array
+    //   console.log('Final result', userDetails)
+
+    //   // Create an Array of Object
+    //   // For Example Users 
+    //   const users [{}, {}, {}, {}]
+
     </script>
   </body>
 </html>
