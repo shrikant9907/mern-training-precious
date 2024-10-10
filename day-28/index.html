@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JavaScript | Shallow and Deep Copy</title>
+    <style>
+      /* Write CSS here */
+    </style>
+  </head>
+  <body>
+    <script>
+
+      const users = [
+        { id: 1, age: 25, name: "Ayush", extra: { nickname: "Ravi"} }, // Reference
+        { id: 2, age: 30, name: "Prashant" },
+        { id: 3, age: 28, name: "Chirayu" },
+        { id: 4, age: 23, name: "Monu" },
+        { id: 5, age: 32, name: "Dilip" },
+      ];
+ 
+      console.log('Original Object', users)
+
+      // Deep Copy
+      // Shallow
+
+      const copyUsers = users.slice(); //shallow copy - object ka reference copy
+      const deepCopyUsers = JSON.parse(JSON.stringify(users)); //deep copy
+
+      // Method 1
+      // const userDetails = users.reduce((pval, curr, index) => {
+      //   const currentObj = {...curr}; // Shallow Copy
+      //   // Shallow Copy
+      //   if (currentObj.age % 2 === 0) {
+      //     currentObj.age += 5; // Object Modify - Reference
+      //   } else {
+      //     currentObj.age += 3;
+      //   }
+
+      //   return [...pval, currentObj];
+      // }, []);  
+
+      // Method 2: 
+      // const userDetails = deepCopyUsers.reduce((pval, curr, index) => {
+      //   if (curr.age % 2 === 0) {
+      //     curr.age += 5; // Object Modify - Reference
+      //   } else {
+      //     curr.age += 3;
+      //   }
+      //   const finalAns = [...pval, curr];
+      //   return finalAns; 
+      // }, []); // Empty Array
+
+      // console.log("Final result", userDetails);
+
+    </script>
+  </body>
+</html>

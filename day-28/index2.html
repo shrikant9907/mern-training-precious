@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call | Apply | Bind</title>
+    <style>
+      /* Write CSS here */
+    </style>
+  </head>
+  <body>
+    <script>
+      // Function
+      // function greet(greeting) {
+      //   return `${greeting}, my name is ${this.name} ${this.age}`; // this ? // undfine
+      // }
+
+      // const person = { name: "John", age: 40 }; // this
+
+      // greet.call(person, 'Hi')
+
+      // // Using call
+      // const message = greet.call(person, "Hello"); // First place will be for this // Invoke
+      // console.log(message); // Output: Hello, my name is John
+
+      // function multiply(a, b, c) {
+      //   // Logic
+      //   return a * b + c;
+      // }
+      // // Construct function bind
+      // const double = multiply.bind(null, 2); // Binding the first argument as 2
+
+      // console.log(double(5, 3));
+
+      // Clouse
+      // function outerFunction(args) {
+      //   // let outerVariable = "I am outside!";
+      //   const value = 10; // Static
+
+      //   function innerFunction(args) {
+      //     const value2 = 20;
+      //     const sum = value + value2;
+      //     return value2;
+      //   }
+
+      //   return innerFunction;
+      // }
+
+    //   const closureFunction = outerFunction();
+    //  const total =  closureFunction();  
+    //  console.log('total', total)
+
+
+    // Doubt
+    const sum = (a,b) => {
+      console.log(a + b);
+    }
+    // const x = 5;
+    // const y = 6;
+    // console.log(x, y);
+
+    function calculator(m, n, callback) {
+      console.log(m,n,callback);
+      const x = m;
+      const y = n;
+      callback(x, y)
+    }
+    const x = 5;
+    const y = 10;
+    calculator(x,y, sum)
+    </script>
+  </body>
+</html>
